@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # online-pharmacy-fullstack
 =======
 # 💊 Online Pharmacy – Fullstack E-commerce Platform
