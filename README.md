@@ -90,11 +90,12 @@ npm run develop
 # Visit admin: http://localhost:1337/admin
 ```
 
+# 7. Register your admin account
+#    (This is only local and required once per environment)
+
 > 📝 Note: Use a valid API token or JWT in frontend `api.js` for authenticated requests.
 
 ## 🙋‍♂️ Author
 
 **Amar Sheikh**
 [GitHub Profile »](https://github.com/amar-sheikh)
-
->>>>>>> origin/master
