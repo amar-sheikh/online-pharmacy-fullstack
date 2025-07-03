@@ -9,9 +9,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const stripePromise = loadStripe(
-  "pk_test_51RddnWPpBn4Bml89NsROg2wDLIkqGh62sgBoAxogOjNvGd2DHpaV6BhaIxs2Uu2N9xChKPDlTC29N221prS8hOuk00131N7vyd"
-);
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
 
 const Cart = () => {
   const { cartItems, cartSubTotal } = useContext(Context);
