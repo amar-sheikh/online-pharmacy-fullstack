@@ -74,6 +74,8 @@ online-pharmacy-fullstack/
 ```bash
 cd frontend
 npm install
+cp .env.example .env   # Set env variables {strapi auth token}
+npm install axios
 npm run dev
 # Visit: http://localhost:5173
 ```
@@ -83,7 +85,7 @@ npm run dev
 ```bash
 cd backend
 npm install
-cp .env.example .env   # Set env variables
+cp .env.example .env   # Set env variables {stripe token }
 npm run develop
 # Visit admin: http://localhost:1337/admin
 ```
