@@ -1,3 +1,4 @@
+
 # online-pharmacy-fullstack
 =======
 # 💊 Online Pharmacy – Fullstack E-commerce Platform
@@ -5,6 +6,9 @@
 This is a **fullstack online pharmacy application**, built with **React + Vite** on the frontend and **Strapi CMS** on the backend. It enables users to browse, search, and purchase medications and health products through a modern and responsive interface.
 
 ---
+## Project Overview
+
+https://github.com/user-attachments/assets/623fbbb6-5c16-4321-ad97-b778f6da5b8e
 
 ## 🚀 Tech Stack
 
