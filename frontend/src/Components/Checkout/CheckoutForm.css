@@ -1,0 +1,82 @@
+.checkout-form {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input.form-control,
+.stripe-card-element {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input.form-control:focus,
+.stripe-card-element:focus {
+  border-color: #6772e5;
+  box-shadow: 0 0 0 1px #6772e5;
+}
+
+.stripe-card-element {
+  height: 44px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.text-danger {
+  color: #dc3545;
+  font-size: 14px;
+}
+
+.btn4 {
+  width: 100%;
+  padding: 12px;
+  background-color: #6772e5;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn4:hover {
+  background-color: #5469d4;
+}
+
+.btn4:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .checkout-form {
+    padding: 0 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}

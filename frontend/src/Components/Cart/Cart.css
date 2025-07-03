@@ -1,0 +1,96 @@
+:root {
+  --dark-color: #3074f0;
+  --primary-color: #f7c9d2;
+  --light-color: #f5f5f5;
+  --success-color: #8c8f94;
+}
+
+.offcanvas.offcanvas-end {
+  width: 400px;
+  max-width: 100%;
+  background-color: #ffffff;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1055;
+}
+
+/* Header */
+.offcanvas-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.offcanvas-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Empty Cart State */
+.empty-cart {
+  padding-top: 2rem;
+}
+
+.empty-cart img {
+  width: 160px;
+  opacity: 0.6;
+}
+
+.empty-cart h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.empty-cart p {
+  color: #777;
+}
+
+.btn5 {
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn5:hover {
+  background-color: var(--light-color);
+  color: black;
+}
+
+.sticky-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.offcanvas-footer {
+  border-top: 1px solid #eee;
+  background-color: #f8f9fa;
+}
+
+.offcanvas-footer h5 {
+  font-weight: 500;
+  color: #333;
+}
+
+.btn4 {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn4:hover {
+  background-color: #0056b3;
+}
