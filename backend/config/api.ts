@@ -5,3 +5,10 @@ export default {
     withCount: true,
   },
 };
+
+module.exports = {
+  chatbot: {
+    enabled: true,
+    resolve: './api/chatbot'
+  }
+};
