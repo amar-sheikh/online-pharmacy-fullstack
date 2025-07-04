@@ -1,4 +1,3 @@
-
 # online-pharmacy-fullstack
 =======
 # 💊 Online Pharmacy – Fullstack E-commerce Platform
@@ -9,6 +8,11 @@ This is a **fullstack online pharmacy application**, built with **React + Vite**
 ## Project Overview
 
 https://github.com/user-attachments/assets/623fbbb6-5c16-4321-ad97-b778f6da5b8e
+
+
+## How Chatbot works
+
+https://github.com/user-attachments/assets/7a8ae4c2-86e1-40b4-a922-e0a104facf89
 
 ## 🚀 Tech Stack
 
