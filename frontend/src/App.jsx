@@ -15,6 +15,7 @@ import AppContext from "./utils/Context";
 import CategoryProducts from "./Components/Category/CategoryProducts";
 import BrandProducts from "./Components/Brand/BrandProducts";
 import Cart from "./Components/Cart/Cart";
+import Chatbot from "./Components/Chatbot/Chatbot";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         </Routes>
         <NewsLetter />
         <Footer />
+        <Chatbot />
       </AppContext>
     </BrowserRouter>
   );
