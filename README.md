@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/8aa65190-a2aa-415e-85e3-b610fd210083
 | Backend  | Strapi (Node.js)    |
 | API      | REST (Strapi API)   |
 | Database | SQLite / PostgreSQL |
-| Auth     | JWT (via Strapi)    |
+| Auth     | JWT Auth (Strapi-admin only)|
 | Payment  | Stripe Integration  |
 
 ---
