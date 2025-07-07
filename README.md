@@ -59,8 +59,6 @@ online-pharmacy-fullstack/
 * 📂 **Categories & Brands**: Manage product classification
 * 📦 **Orders API**: Handle order submissions and status updates
 * 🛡️ **Authentication & Permissions**: Role-based admin control
-* 📸 **Media Uploads**: (Optional) Cloudinary integration
-
 ---
 
 ## 🔗 API Endpoints (Strapi)
