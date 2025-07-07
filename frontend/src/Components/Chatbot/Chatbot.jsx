@@ -2,8 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { sendChatbotMessage } from "../../utils/api";
 import "./Chatbot.css";
+import { useContext } from "react";
+import { Context } from "../../utils/Context";
 
 const Chatbot = () => {
+  const { isCartOpen } = useContext(Context);
+  if (isCartOpen) return null;
+
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
