@@ -1,5 +1,5 @@
 import { Context } from "../../utils/Context";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import "../Cart/Cart.css";
 import CartItems from "./CartItems/CartItems";
 import { makePaymentRequest } from "../../utils/api";
@@ -15,8 +15,24 @@ const Cart = () => {
   const { cartItems, cartSubTotal } = useContext(Context);
   const [showCheckoutForm, setShowCheckoutForm] = useState(false);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
+  const { setIsCartOpen } = useContext(Context);
 
   const handleCheckoutClick = () => setShowCheckoutForm(true);
+
+  useEffect(() => {
+    const cartEl = document.getElementById("offcanvasRight");
+
+    const handleOpen = () => setIsCartOpen(true);
+    const handleClose = () => setIsCartOpen(false);
+
+    cartEl?.addEventListener("show.bs.offcanvas", handleOpen);
+    cartEl?.addEventListener("hidden.bs.offcanvas", handleClose);
+
+    return () => {
+      cartEl?.removeEventListener("show.bs.offcanvas", handleOpen);
+      cartEl?.removeEventListener("hidden.bs.offcanvas", handleClose);
+    };
+  }, []);
 
   return (
     <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight">
@@ -27,6 +43,7 @@ const Cart = () => {
           type="button"
           className="btn-close"
           data-bs-dismiss="offcanvas"
+          onClick={() => setIsCartOpen(false)}
         ></button>
       </div>
       <hr />

@@ -10,6 +10,7 @@ const AppContext = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
   const [cartSubTotal, setCartSubTotal] = useState(0);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   //   const [total, setTotal] = useState(0);
   //   const [user, setUser] = useState(null);
@@ -94,6 +95,8 @@ const AppContext = ({ children }) => {
         handleAddToCart,
         handleRemoveFromCart,
         handleCartQuantity,
+        isCartOpen,
+        setIsCartOpen,
         // total,
         // setTotal,
         // user,
