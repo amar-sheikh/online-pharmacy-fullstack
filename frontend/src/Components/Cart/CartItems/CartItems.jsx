@@ -57,7 +57,11 @@ const CartItems = () => {
               onClick={() => handleRemoveFromCart(item)}
               aria-label="Remove"
             >
-              🗑️
+              <img
+                className="delete-icon"
+                src="https://img.icons8.com/?size=100&id=aOrAmxXX3M3Y&format=png&color=FF0000"
+                alt="Remove"
+              />
             </button>
           </div>
         );
